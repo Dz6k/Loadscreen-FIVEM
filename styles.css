@@ -1,3 +1,33 @@
 body {
-    background-color: #000;
+    background-color: #000000da;
+}
+
+#banner {
+    animation: girarAlternado 10s infinite ease-in-out;
+    transform-origin: center center;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(151, 4, 4, 0.678));
+}
+
+@keyframes girarAlternado {
+0% {
+    transform: scale(0.95) rotate(0deg);
+    filter: drop-shadow(0 0 5px rgba(25, 0, 255, 0.5));
+}
+25% {
+    transform: scale(1.1) rotate(4deg);  
+    filter: drop-shadow(0 0 20px rgba(168, 0, 0, 0.9));
+}
+50% {
+    transform: scale(0.95) rotate(0deg);
+    filter: drop-shadow(0 0 5px rgba(25, 0, 255, 0.5));
+}
+75% {
+    transform: scale(1.1) rotate(-4deg);  
+    filter: drop-shadow(0 0 20px rgba(168, 0, 0, 0.9));
+}
+100% {
+    transform: scale(0.95) rotate(0deg);
+    filter: drop-shadow(0 0 5px rgba(25, 0, 255, 0.5));
+}
 }
